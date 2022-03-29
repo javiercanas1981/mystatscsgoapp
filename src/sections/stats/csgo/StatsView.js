@@ -82,15 +82,12 @@ const Labels = ({ slices, height, width }) => {
     })
 }
 
-
 export class StatsView extends Component {
-
-
 
     getCard = (title, stat) => {
         return (<View>
-                <Text style={styles.description}>{title} {stat}</Text>
-            </View>);
+            <Text style={styles.description}>{title} {stat} </Text>
+        </View>);
     }
 
     renderSectionHeader = (title) =>  {
@@ -177,7 +174,7 @@ export class StatsView extends Component {
                     <Text style={styles.name}>Player {name} (SteamID: {stats.item2.steamid})</Text>
                 </View>
 
-                {this.renderSectionHeader('Totals')}
+                {this.renderSectionHeader('Statistics')}
 
                 <View style={styles.textContainer}>
                     {this.getCard('Total Kills:', userdata.user.total.kills)}
@@ -203,6 +200,7 @@ export class StatsView extends Component {
 
 
                 {this.renderSectionHeader('Achievements')}
+
                 <PieChart
                     style={{ height: 200 }}
                     valueAccessor={({ item }) => item.amount}
@@ -241,7 +239,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: Dimensions.get('window').width,
-        height: 200,
+        height: 400,
     },
     textContainer: {
         flexDirection: 'row',

@@ -166,12 +166,7 @@ const styles = StyleSheet.create({
         height: 200,
         width: '100%',
     },
-    container: {
-        flex: 1,
-        backgroundColor: Colors.background,
-        paddingTop: 5,
-        paddingBottom: 20,
-    },
+
     headerSectionContainer: {
         backgroundColor: Colors.primary,
         padding: 10,
@@ -182,8 +177,8 @@ const styles = StyleSheet.create({
         fontWeight: '600',
     },
     row_card: {
-        paddingTop:1,
-        paddingBottom:10,
+        paddingTop:5,
+        paddingBottom:1,
         paddingLeft:1,
         paddingRight:1,
         borderRadius:1,
@@ -191,7 +186,7 @@ const styles = StyleSheet.create({
         marginTop: 0,
         marginBottom: 0.3,
         flexDirection: 'row',
-        backgroundColor: 'rgba(0,0,0,0.5)',
+        backgroundColor: 'rgba(71,55,55,0.5)',
         shadowColor: "#000000",
         shadowOpacity: 0.3,
         shadowRadius: 1,
