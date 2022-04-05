@@ -14,7 +14,7 @@ The goal of this app is:
 
 Plus:
 
-- If API endpoint returns error for some reason, this app show a button that allow user to refetch the characters and his homeworlds for a better UX.
+- If API endpoint returns error for some reason, this app show a button that allow user to refetch the profiles and his homeworlds for a better UX.
 - Paginating profiles/stats list.
 
 

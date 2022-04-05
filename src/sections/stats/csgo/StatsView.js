@@ -183,7 +183,7 @@ export class StatsView extends Component {
                     {this.getCard('Total Deaths:', userdata.user.total.deaths)}
                 </View>
                 <View style={styles.textContainer}>
-                    {this.getCard('Ratio:', userdata.user.total.kills / userdata.user.total.deaths)}
+                    {this.getCard('Ratio:', (userdata.user.total.kills / userdata.user.total.deaths).toFixed(2))}
                 </View>
                 <View style={styles.textContainer}>
                     {this.getCard('MVP:', userdata.user.total.mvps)}
